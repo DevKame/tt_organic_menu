@@ -9,7 +9,8 @@ renderMenu();
 function renderMenu(e) {
     links.forEach(l => l.classList.remove("active"));
     let d = "";
-    let {width: w, height: h, left: l} = svg.getBoundingClientRect();
+    let {width: w, height: h, left: l}
+    = svg.getBoundingClientRect();
     if(!e)
     {
         d =
@@ -24,9 +25,8 @@ function renderMenu(e) {
         L5 20`;
     }
     else {
-        const circles = document.querySelectorAll("circle");
-        circles.forEach(c => c.remove());
-        let {left: al, right: ar, width: aw, top: at} = e.currentTarget.getBoundingClientRect();
+        let {left: al, right: ar, width: aw, top: at}
+        = e.currentTarget.getBoundingClientRect();
         let leftoffset = al - l;
         let thirdwidth = aw / 3;
         let newtop = at / 3;
@@ -34,9 +34,13 @@ function renderMenu(e) {
         `M5 20 Q5 5 20 5
         L${leftoffset - thirdwidth} 5
 
-        C${leftoffset - 20} 5 ${leftoffset - 20} ${newtop} ${leftoffset + 30} ${newtop}
+        C${leftoffset - 20} 5
+         ${leftoffset - 20} ${newtop}
+         ${leftoffset + 30} ${newtop}
         L${leftoffset + aw - 30} ${newtop}
-        C${leftoffset + aw + 20} ${newtop} ${leftoffset + aw + 20} 5 ${leftoffset + aw + thirdwidth} 5
+        C${leftoffset + aw + 20} ${newtop}
+         ${leftoffset + aw + 20} 5
+         ${leftoffset + aw + thirdwidth} 5
 
         L${w - 20} 5
 
