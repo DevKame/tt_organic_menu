@@ -33,7 +33,6 @@ function renderMenu(e) {
         d =
         `M5 20 Q5 5 20 5
         L${leftoffset - thirdwidth} 5
-
         C${leftoffset - 20} 5
          ${leftoffset - 20} ${newtop}
          ${leftoffset + 30} ${newtop}
@@ -41,10 +40,7 @@ function renderMenu(e) {
         C${leftoffset + aw + 20} ${newtop}
          ${leftoffset + aw + 20} 5
          ${leftoffset + aw + thirdwidth} 5
-
         L${w - 20} 5
-
-
         Q${w - 5} 5 ${w - 5} 20
         L${w - 5} ${h - 20}
         Q${w - 5} ${h - 5} ${w - 20} ${h - 5}
