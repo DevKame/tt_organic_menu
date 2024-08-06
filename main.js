@@ -34,8 +34,8 @@ function renderMenu(e) {
         `M5 20 Q5 5 20 5
         L${leftoffset - thirdwidth} 5
 
-        C${leftoffset - 20} 5 ${leftoffset - 20} ${newtop} ${leftoffset} ${newtop}
-        L${leftoffset + aw} ${newtop}
+        C${leftoffset - 20} 5 ${leftoffset - 20} ${newtop} ${leftoffset + 30} ${newtop}
+        L${leftoffset + aw - 30} ${newtop}
         C${leftoffset + aw + 20} ${newtop} ${leftoffset + aw + 20} 5 ${leftoffset + aw + thirdwidth} 5
 
         L${w - 20} 5
